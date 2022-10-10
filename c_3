@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main()
+{
+    char a, b;
+    printf("Zadajte znak:");
+    a = getchar();
+    b = getchar();
+    if ((a >= 65) && (a <= 90)) {
+        a += 32;
+       
+        printf("Zmeneny znak: %c \n", a);
+    }
+
+    else if ((a >= 97) && (a <= 122)) {
+        a -= 32;
+
+        printf("Zmeneny znak: %c \n", a);
+    }
+    else printf("Nezadal si pismeno! \n");
+
+
+        if ((b >= 65) && (b <= 90)) {
+        b += 32;
+
+        printf("Zmeneny znak: %c \n", b);
+    }
+
+    else if ((b >= 97) && (b <= 122)) {
+            b -= 32;
+
+            printf("Zmeneny znak: %c \n", b);
+    }
+    else printf("Nezadal si pismeno! \n");
+
+    printf("Vystup pre ukazkovy vstup: %d\n", a);
+    printf("Vystup pre ukazkovy vstup: %d\n", b);
+
+
+
+
+    return 0;
+}
